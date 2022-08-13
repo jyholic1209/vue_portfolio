@@ -34,7 +34,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Footer-page",
+};
 </script>
 
 <style scoped>

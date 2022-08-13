@@ -26,5 +26,5 @@ npm run lint
 
 ### Customize configuration
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
-Deplory [netlify] (https://vue-webcam.netlify.app)
+- See [Configuration Reference](https://cli.vuejs.org/config/).
+- Deplory [netlify] (https://vue-webcam.netlify.app)

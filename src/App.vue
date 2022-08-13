@@ -6,7 +6,7 @@
         <h1>Web Project Portfolio</h1>
         <p class="lead">This is Vue3 Web Application Project by Jyholic.</p>
         <p class="lead">
-          {{ startDate}}
+        
         </p>
         <p class="lead">
           <ul>
@@ -20,7 +20,11 @@
         </p>
       </main>
     </div>
+    <hr>
   </body>
+  <DetailPage v-bind:title="'WebCam Recording'" />
+  <WebCamPage />
+    
   <FooterComp />
 </template>
 
@@ -28,10 +32,12 @@
 import HeaderComp from "./components/HeaderComp.vue";
 import FooterComp from "./components/FooterComp.vue";
 import moment from "moment";
+import DetailPage from "./components/DetailPage.vue";
+import WebCamPage from "./components/WebCamPage.vue";
 
 export default {
   name: "App",
-  components: { HeaderComp, FooterComp },
+  components: { HeaderComp, FooterComp, DetailPage, WebCamPage },
   data() {
     return {
       
