@@ -6,11 +6,11 @@
         <h1>Web Project Portfolio</h1>
         <p class="lead">This is Vue3 Web Application Project by Jyholic.</p>
         <p class="lead">
-          {{ getStudyVueDay()}}
+          {{ startDate}}
         </p>
         <p class="lead">
           <ul>
-            <li></li>
+            <li> Vue3 Programming {{ getStudyVueDay()}} Hours</li>
           </ul>
           <a
             href="#"
@@ -27,21 +27,21 @@
 <script>
 import HeaderComp from "./components/HeaderComp.vue";
 import FooterComp from "./components/FooterComp.vue";
+import moment from "moment";
 
 export default {
   name: "App",
   components: { HeaderComp, FooterComp },
   data() {
     return {
-      startDate: new Date(2022,8,8),
+      
   };
   },
   methods: {
     getStudyVueDay() {
-      const nowDate = new Date();
-      console.log(nowDate,"현재");
-      console.log(`start ${this.startDate}`)
-      return nowDate - this.startDate;
+      const nowDate = new moment();
+      const stDate = new moment([2022, 8, 8]);
+      return stDate.diff(nowDate,'hours');
     },
   },
 };
