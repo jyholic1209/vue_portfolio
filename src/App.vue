@@ -10,7 +10,7 @@
         </p>
         <p class="lead">
           <ul>
-            <li> Vue3 Programming {{ getStudyVueDay()}} Hours</li>
+            <li> Vue3 Programming {{ getStudyVueDay() }} Hours</li>
           </ul>
           <a
             href="#"
@@ -22,7 +22,7 @@
     </div>
     <hr>
   </body>
-  <DetailPage v-bind:title="'WebCam Recording'" />
+  <DetailPage v-bind:title="'WebCam Control'" />
   <WebCamPage />
     
   <FooterComp />
@@ -43,6 +43,8 @@ export default {
       
   };
   },
+  computed : {
+    },
   methods: {
     getStudyVueDay() {
       const nowDate = new moment();

@@ -14,10 +14,9 @@ export default {
     },
   },
   data() {
-    return {
-      //   pageTitle: "Detail Page",
-    };
+    return {};
   },
+  methods: {},
 };
 </script>
 
